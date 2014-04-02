@@ -1,6 +1,6 @@
 {
   "name": "cfp-rejector",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A simple script to calculate what emails need to be contacted for CFP rejection. Ultra sad!",
   "main": "lib/index.js",
   "scripts": {
