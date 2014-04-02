@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+var rejector = require('../lib/index');
+
+var optimist = require('optimist')
+  .option('cfp', {
+    description: 'Tab-separated file to parse from',
+    alias: 'c',
+    demand: true
+  })
+  .option('names', {
+    description: '\n delimited list of accepted names',
+    alias: 'n',
+    demand: true
+  })
+  .option('out', {
+    description: 'File to output emails to',
+    alias: 'o',
+    default: 'rejected.csv'
+  })
+  .option('help', {
+    description: 'Display this message',
+    alias: 'h'
+  });
+
+var argv = optimist.argv;
+if (argv.help) {
+  return optimist.showHelp();
+}
+
+rejector(argv, function (err) {
+  if (err) { console.dir(err) }
+  console.log('Done processing CFP');
+});
