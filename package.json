@@ -1,0 +1,27 @@
+{
+  "name": "cfp-rejector",
+  "version": "0.0.0",
+  "description": "A simple script to calculate what emails need to be contacted for CFP rejection. Ultra sad!",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"no tests\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/EmpireJS/cfp-rejector.git"
+  },
+  "keywords": [
+    "cfp",
+    "conf"
+  ],
+  "author": "Charlie Robbins <charlie.robbins@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EmpireJS/cfp-rejector/issues"
+  },
+  "homepage": "https://github.com/EmpireJS/cfp-rejector",
+  "dependencies": {
+    "optimist": "^0.6.1",
+    "async": "^0.6.2"
+  }
+}
